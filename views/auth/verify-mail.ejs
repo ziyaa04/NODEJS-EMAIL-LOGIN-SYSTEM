@@ -1,0 +1,19 @@
+<%- contentFor('title')%>
+Verify Account
+<%- contentFor('body') %>
+<div class="container text-center" style="margin-top: 300px; max-width: 300px ">
+
+    <h2>Verify Mail</h2>
+    <%if(locals.error){%>
+        <div class="alert alert-danger">
+            <%=error%>
+        </div>
+    <%}else{%>
+    <div class="alert alert-success">
+        <%=success%>
+    </div>
+    <%}%>
+
+    <a href="/" class="btn btn-primary"> Home </a>
+</div>
+

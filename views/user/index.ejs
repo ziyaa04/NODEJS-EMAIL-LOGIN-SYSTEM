@@ -1,0 +1,12 @@
+<%- contentFor('title') %>
+
+User
+<%- contentFor('body') %>
+
+<div class="container text-center" style="margin-top: 300px;">
+    <h1>Hello username</h1>
+    <form action="/user/logout" method="post">
+        <input type="hidden" name="_token" value="<%=_token%>">
+        <button type="submit" class="btn btn-danger">Logout</button>
+    </form>
+</div>
